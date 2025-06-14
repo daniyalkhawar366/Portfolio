@@ -1,1 +1,32 @@
-<div class="w-full flex_center flex-col gap-2"> 
+import {
+  GithubIcon,
+  LinkedinIcon,
+  InstagramIcon,
+  GmailIcon,
+} from "../assets/SVGs";
+
+const currentYear = new Date().getFullYear();
+
+<footer class="w-full py-8">
+  <div class="container mx-auto px-4">
+    <div class="w-full flex_center flex-col gap-2">
+      <div class="flex gap-4">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform">
+          <GithubIcon class="w-6 h-6" />
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform">
+          <LinkedinIcon class="w-6 h-6" />
+        </a>
+        <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform">
+          <InstagramIcon class="w-6 h-6" />
+        </a>
+        <a href="mailto:your.email@example.com" class="hover:scale-110 transition-transform">
+          <GmailIcon class="w-6 h-6" />
+        </a>
+      </div>
+      <p class="text-sm text-gray-600 dark:text-gray-400">
+        © {currentYear} Your Name. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer> 
